@@ -2,9 +2,39 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="back.css">
+  
     <title>background</title>
+<style media="screen">
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  /*vh 뷰 포트(화면크) 너비 값의 100분의 1단/***/
+  height: 100vh;
+  background: url('city.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*cover 이미지 화면에 맞춰서
+  하지만 크기 줄일시, 잘리는 부분 생김
+  contain - 이미지가 잘리지 않고 다 보여/
+  auto -  기본 옵션, 배경의 원래 크기*/
+  background-size: cover;
+  background-attachment: fixed;
+  /*배경이미지 여러장 겹쳐서
+  background:  url('woman.png'), url('city.jpg');
+  background-repeat: no-repeat;*/
+
+}
+
+p {
+  width: 600px;
+  margin: 20px auto;
+  color: red;
+}
+
+</style>
   </head>
   <body>
 
